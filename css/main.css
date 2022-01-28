@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-size: 1.125rem;
+}
+
+.deal, .col-item {
+  border-radius: 0.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typohraphy */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0.8rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Buttons */
+button {
+  margin: 0.8rem;
+  padding: 0.5rem 1.8rem;
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.price {
+  background-color: #000000;
+}
+
+.buy {
+  background-color: #fecd45;
+  color: #000000;
+}
+
+/* Navigation */
+.logo {
+  text-align: center;
+  font-weight: 900;
+}
+.logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+nav a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  color: #fecd45;
+}
+
+/* Page */
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+.intro {
+  background-color: #46A3FF;
+  background-image: url(/images/banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.intro-img img {
+  max-width: 100%;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5%;
+}
+.intro-text h1 {
+  font-size: 1.5rem;
+}
+
+.deal {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.nike,
+.hoodie {
+  background-color: #F67B7B;
+}
+
+.watch,
+.bag {
+  background-color: #46A3FF;
+}
+
+.exclusive-main {
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: url(/images/exclusive.png);
+  background-size: 52%;
+  background-repeat: no-repeat;
+}
+
+.exclusive-img {
+  flex-shrink: 5;
+}
+
+.exclusive-text {
+  flex-shrink: 0;
+}
+
+.mens-col {
+  background-image: url(/images/mens-collection.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.womens-col {
+  background-image: url(/images/womens-collection.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.premium {
+  background-image: url(/images/premium-shirt.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mens-foot {
+  background-image: url(/images/mens-footwear.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.womens-foot {
+  background-image: url(/images/womens-footwear.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cap {
+  background-image: url(/images/caps.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.col-item {
+  max-width: 100%;
+  min-width: 50%;
+  padding: 3rem;
+  margin: 1rem;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #FFFFFF;
+}
+.col-item h4,
+.col-item p {
+  background-color: #00000050;
+  padding: 1rem;
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+}
+
+.newsletter {
+  margin-top: 2rem;
+}
+.newsletter input {
+  margin: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social img {
+  max-width: 2rem;
+  margin: 1rem;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  img {
+    max-width: 80%;
+  }
+
+  .intro-text {
+    margin: 5% 20%;
+  }
+
+  .deal {
+    display: flex;
+  }
+
+  exclusive-main {
+    margin: 0 6rem;
+  }
+
+  .exclusive-text {
+    margin: 3rem 0.8rem auto;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .intro {
+    justify-content: center;
+    background-position: center center;
+    flex-direction: column;
+  }
+
+  .intro-text {
+    margin: 6rem 6rem 6rem 16rem;
+  }
+
+  .deals-list {
+    display: flex;
+  }
+
+  .details-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .exclusive-main {
+    background-size: contain;
+    margin: 0 15rem;
+  }
+
+  .exclusive-text {
+    margin: 4rem;
+  }
+
+  .collection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-item {
+    min-width: 40%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F67B7B;
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
